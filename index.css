@@ -1,24 +1,25 @@
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* 确保根元素占满全屏 */
 html, body, #root {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 /* 确保body有正确的背景和定位 */
 body {
-  background-color: #050a05;
-  position: relative;
+  background-color: #050a05 !important;
+  position: relative !important;
 }
 
 /* 确保root容器正确定位 */
 #root {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
