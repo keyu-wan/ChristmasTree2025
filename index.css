@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 确保根元素占满全屏 */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* 确保body有正确的背景和定位 */
+body {
+  background-color: #050a05;
+  position: relative;
+}
+
+/* 确保root容器正确定位 */
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
