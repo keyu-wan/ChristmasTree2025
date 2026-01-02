@@ -1,6 +1,6 @@
 @tailwind components;
 @tailwind utilities;
-/* 
+
 /* 确保根元素占满全屏 */
 html, body, #root {
   height: 100%;
@@ -21,4 +21,4 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-} */
+}
