@@ -1,0 +1,7 @@
+{
+  "name": "Christmas Tree",
+  "description": "A cinematic, gesture-controlled 3D Christmas experience featuring a transforming particle tree and photo cloud.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

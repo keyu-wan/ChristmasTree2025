@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Lumière Noel - 猪猪圣诞树</title>
+    <!-- MediaPipe Hands Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <style>
+      body { margin: 0; background-color: #050a05; overflow: hidden; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 3px; }
+      @keyframes fade-in-down {
+        0% { opacity: 0; transform: translateY(-10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-down { animation: fade-in-down 1s ease-out forwards; }
+
+      /* Music slash effect for muted state */
+      .music-btn-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .music-slash::after {
+        content: "";
+        position: absolute;
+        width: 130%;
+        height: 2px;
+        background-color: #D4AF37;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        pointer-events: none;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+        "three": "https://aistudiocdn.com/three@^0.181.2",
+        "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+        "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+        "maath": "https://aistudiocdn.com/maath@^0.10.8",
+        "@react-three/postprocessing": "https://aistudiocdn.com/@react-three/postprocessing@^3.0.4"
+      }
+    }
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
